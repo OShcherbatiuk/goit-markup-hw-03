@@ -1,0 +1,232 @@
+/*
+Основной цвет текста #757575
+Вторичный цвет текста #212121
+Акцент #2196F3
+
+
+font-family: Raleway bold; - лого
+font-family: Roboto 500; - навигация шапки, h команды, нав портфолио
+font-family: Roboto 900; h героя
+font-family: Roboto bold; кнопка услуг, h фичи, h секций, h портфеля
+font-family: Roboto normal(400) p фичи, p команды, p портфеля
+*/
+
+:root {
+  --primari-font-family: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-title-color: #ffffff;
+  --accent-color: #2196f3;
+  --secondary-bg-color: #f5f4fa;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+body {
+  font-family: var(--primari-font-family);
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+
+/*  ============  COMPONENTS  ============ */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+.logo-second {
+  color: var(--title-text-color);
+}
+
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/*  ============  END COMPONENTS  ============ */
+
+/*==============  HEADER  ==============*/
+
+.navigation-list-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.header-mail-link,
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.header-mail-link:hover,
+.header-tel-link:hover,
+.header-mail-link:focus,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+
+/*==============  END HEADER  ==============*/
+
+/*==============  HERO  ==============*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.hero-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--secondary-title-color);
+}
+/*==============  END HERO  ==============*/
+
+/*==============  FEATURES  ==============*/
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+/*==============  END FEATURES ==============*/
+
+/*==============  ABOUT US ==============*/
+
+/*==============  END ABOUT US ==============*/
+
+/*==============  TEAM  ==============*/
+.team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-list-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*==============  END TEAM ==============*/
+
+/*==============  FOOTER ==============*/
+.address-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
+.footer-mail-link,
+.footer-tel-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list-link:hover,
+.footer-mail-link:hover,
+.footer-tel-link:hover,
+.address-list-link:focus,
+.footer-mail-link:focus,
+.footer-tel-link:focus {
+  color: var(--accent-color);
+}
+
+/*==============  END FOOTER ==============*/
+
+/*++++++++++++++++ PORTFOLIO +++++++++++++++++*/
+/*==============  PROJECTS ==============*/
+.project-nav-list-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
+.project-nav-list-link:hover,
+.project-nav-list-link:focus {
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+}
+
+.projects-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/*==============  END PROJECTS ==============*/
