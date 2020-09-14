@@ -59,13 +59,14 @@ body {
 .title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 /*  ============  END COMPONENTS  ============ */
 
 /*==============  HEADER  ==============*/
@@ -110,7 +111,7 @@ body {
 }
 
 .hero-btn {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   align-items: center;
@@ -124,7 +125,7 @@ body {
 /*==============  FEATURES  ==============*/
 
 .features-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
@@ -195,9 +196,22 @@ body {
 
 /*++++++++++++++++ PORTFOLIO +++++++++++++++++*/
 /*==============  PROJECTS ==============*/
-.project-nav-list-link {
-  font-family: Roboto;
-  font-style: normal;
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+.btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -208,25 +222,9 @@ body {
   border-radius: 4px;
 }
 
-.project-nav-list-link:hover,
-.project-nav-list-link:focus {
+.btn:hover,
+.btn:focus {
   color: var(--secondary-title-color);
   background-color: var(--accent-color);
 }
-
-.projects-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
-
-.project-description {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-}
-
 /*==============  END PROJECTS ==============*/
