@@ -11,6 +11,13 @@ font-family: Roboto bold; кнопка услуг, h фичи, h секций, h
 font-family: Roboto normal(400) p фичи, p команды, p портфеля
 */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primari-font-family: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -100,6 +107,11 @@ body {
 /*==============  END HEADER  ==============*/
 
 /*==============  HERO  ==============*/
+
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -192,10 +204,35 @@ body {
   color: var(--accent-color);
 }
 
+.logo-foot-second {
+  color: var(--secondary-title-color);
+}
 /*==============  END FOOTER ==============*/
 
 /*++++++++++++++++ PORTFOLIO +++++++++++++++++*/
 /*==============  PROJECTS ==============*/
+
+.project.nav {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding: 0, 15px;
+  margin: 0 auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.project-list-item {
+  width: 320px;
+  margin: 15px;
+}
+
 .projects-title {
   font-weight: 700;
   font-size: 18px;
