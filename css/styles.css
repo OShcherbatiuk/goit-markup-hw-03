@@ -76,6 +76,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .container {
@@ -137,11 +138,11 @@ img {
 }
 
 .logo {
-  margin-right: 40px;
+  margin-right: 94px;
 }
 
 .navigation-list-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .header .address {
@@ -149,7 +150,7 @@ img {
 }
 
 .header-mail-link {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 /*==============  END HEADER  ==============*/
@@ -158,13 +159,13 @@ img {
 
 .hero {
   text-align: center;
+  align-items: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
@@ -174,15 +175,20 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--secondary-title-color);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
 }
 
 .hero .container {
   display: flex;
+  align-items: center;
+  margin-bottom: 94px;
 }
 
 /*==============  END HERO  ==============*/
@@ -207,10 +213,15 @@ img {
 
 .features .container {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .features-list {
   display: flex;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*==============  END FEATURES ==============*/
 
@@ -218,12 +229,16 @@ img {
 
 .about .container {
   display: flex;
-  align-items: center;
+  margin-bottom: 94px;
 }
 
 .about-list {
   display: flex;
   justify-content: space-between;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*==============  END ABOUT US ==============*/
@@ -245,7 +260,29 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/*==============  END TEAM ==============*/
+
+.team .container {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-content {
+  padding-top: 30px;
+  padding-right: 72px;
+  padding-bottom: 59px;
+  padding-left: 72px;
+  background-color: var(--secondary-title-color);
+}
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+/*===========  END TEAM ==============*/
 
 /*==============  FOOTER ==============*/
 .address-list-link {
