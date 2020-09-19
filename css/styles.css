@@ -93,30 +93,8 @@ img {
 
 /*==============  HEADER  ==============*/
 
-.navigation-list-item-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-
-.header-mail-link,
-.header-tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-
-.navigation-list-item-link:hover,
-.navigation-list-item-link:focus,
-.header-mail-link:hover,
-.header-tel-link:hover,
-.header-mail-link:focus,
-.header-tel-link:focus {
-  color: var(--accent-color);
+.header {
+  padding: 32px 0;
 }
 
 .header .container {
@@ -133,11 +111,7 @@ img {
   display: flex;
 }
 
-.header {
-  padding: 32px;
-}
-
-.logo {
+.header .logo {
   margin-right: 94px;
 }
 
@@ -153,42 +127,75 @@ img {
   margin-right: 50px;
 }
 
+.navigation-list-item-link {
+  padding: 32px 0;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.header-mail-link,
+.header-tel-link {
+  padding: 32px 0;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.header-mail-link:hover,
+.header-tel-link:hover,
+.header-mail-link:focus,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+
 /*==============  END HEADER  ==============*/
 
 /*==============  HERO  ==============*/
 
 .hero {
+  background-color: #2f303a;
+}
+
+.hero .container {
   text-align: center;
-  align-items: center;
+  padding: 200px 452px;
+  margin-bottom: 94px;
+  width: 1600px;
 }
 
 .hero-title {
+  color: var(--secondary-title-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-title-color);
 }
 
 .hero-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--secondary-title-color);
+  min-width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--secondary-title-color);
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-}
-
-.hero .container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 94px;
 }
 
 /*==============  END HERO  ==============*/
@@ -222,6 +229,11 @@ img {
 
 .features-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-description {
+  width: 270px;
+  height: 101px;
 }
 /*==============  END FEATURES ==============*/
 
@@ -263,7 +275,7 @@ img {
 
 .team .container {
   display: flex;
-  margin-bottom: 94px;
+  padding: 186px 0;
 }
 
 .team-list {
@@ -271,13 +283,26 @@ img {
   justify-content: space-between;
 }
 
+.team-list-item {
+  width: 270px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-list-content {
   padding-top: 30px;
   padding-right: 72px;
-  padding-bottom: 59px;
+  padding-bottom: 30px;
   padding-left: 72px;
   background-color: var(--secondary-title-color);
 }
+
+.team .team-list-name {
+  margin-bottom: 10px;
+}
+
 .team {
   background-color: var(--secondary-bg-color);
 }
@@ -285,6 +310,14 @@ img {
 /*===========  END TEAM ==============*/
 
 /*==============  FOOTER ==============*/
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .container {
+  padding: 60px 0;
+}
+
 .address-list-link {
   font-weight: 400;
   font-size: 14px;
@@ -311,6 +344,11 @@ img {
   color: var(--accent-color);
 }
 
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .logo-foot-second {
   color: var(--secondary-title-color);
 }
@@ -319,22 +357,31 @@ img {
 /*++++++++++++++++ PORTFOLIO +++++++++++++++++*/
 /*==============  PROJECTS ==============*/
 
-.project.nav {
+.project-nav-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.project-nav-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 }
 
-.project-list-item {
-  width: 320px;
-  margin: 15px;
+.project-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.projects-title {
+.project-list-content {
+  padding: 24px 20px;
+  border: 1px solid black;
+}
+
+.project-list-item .projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -350,6 +397,7 @@ img {
 }
 
 .btn {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
