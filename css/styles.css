@@ -242,7 +242,13 @@ img {
 
 .about .container {
   display: flex;
+  flex-direction: column;
   margin-bottom: 94px;
+}
+
+.about .title {
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .about-list {
@@ -276,9 +282,15 @@ img {
 
 .team .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 94px;
+}
+
+.team .title {
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-list {
