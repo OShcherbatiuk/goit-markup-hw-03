@@ -164,15 +164,11 @@ img {
 
 /*==============  HERO  ==============*/
 
-.hero {
-  background-color: #2f303a;
-}
-
 .hero .container {
   text-align: center;
   padding: 200px 452px;
-  margin-bottom: 94px;
   width: 1600px;
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -222,7 +218,8 @@ img {
 
 .features .container {
   display: flex;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -244,11 +241,10 @@ img {
 .about .container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .about .title {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -264,6 +260,7 @@ img {
 /*==============  END ABOUT US ==============*/
 
 /*==============  TEAM  ==============*/
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -285,11 +282,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team .title {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
