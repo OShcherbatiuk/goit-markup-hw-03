@@ -163,12 +163,14 @@ img {
 /*==============  END HEADER  ==============*/
 
 /*==============  HERO  ==============*/
+.hero {
+  background-color: #2f303a;
+}
 
 .hero .container {
   text-align: center;
   padding: 200px 452px;
   width: 1600px;
-  background-color: #2f303a;
 }
 
 .hero-title {
