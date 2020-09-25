@@ -44,6 +44,8 @@ body {
   font-family: var(--primari-font-family);
   color: var(--primary-text-color);
   font-style: normal;
+  /*max-width: 1600px;
+  margin: auto;*/
 }
 
 img {
@@ -298,6 +300,9 @@ img {
 
 .team-list-item {
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item:not(:last-child) {
@@ -311,6 +316,9 @@ img {
   padding-bottom: 30px;
   padding-left: 58px;
   background-color: var(--secondary-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .team-list-name {
